@@ -1,0 +1,3 @@
+break bof
+disable $bpnum
+

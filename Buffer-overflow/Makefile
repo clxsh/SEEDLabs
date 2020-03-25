@@ -4,7 +4,7 @@ call_shellcode: call_shellcode.c
 	gcc -z execstack -o call_shellcode call_shellcode.c
 
 stack: stack.c
-	gcc -z execstack -o stack stack.c
+	gcc -z execstack -fno-stack-protector -o stack stack.c
 
 exploit: exploit.c
 	gcc -o exploit exploit.c
